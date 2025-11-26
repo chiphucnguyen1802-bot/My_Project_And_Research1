@@ -32,11 +32,6 @@ while running:
 	tail_x = snakes[0][0]
 	tail_y = snakes[0][1]
 
-	# Draw grid
-	# for i in range(21):
-	# 	pygame.draw.line(screen, WHITE,(0,i*30),(600,i*30))
-	# 	pygame.draw.line(screen, WHITE,(i*30,0),(i*30,600))
-
 	# Draw snake
 	for snake in snakes:
 		pygame.draw.rect(screen, GREEN, (snake[0]*30, snake[1]*30, 30, 30))
