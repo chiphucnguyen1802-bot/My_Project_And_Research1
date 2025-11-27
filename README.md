@@ -1,58 +1,76 @@
 Snake AI Demo
 
-Description
 
-This is a Snake game implemented in Python using Pygame.
-In addition to the basic movement mechanics, the game features a simple AI that automatically controls the snake to eat apples.
+Overview
 
-The snake moves on a 20x20 grid
+Snake AI Demo is a modern implementation of the classic Snake game using Python and Pygame.
+This version introduces a simple AI agent that automatically navigates the snake toward apples while avoiding obstacles, demonstrating basic decision-making and AI logic in a game environment.
 
-Apples spawn randomly in a safe zone, avoiding corners and edges to allow the AI to survive longer
+Grid-based gameplay on a 20x20 board
 
-The snake grows longer when it eats an apple
+Apples spawn randomly in a safe zone to minimize immediate collisions
 
-The game ends if the snake hits the wall or itself
+The snake grows in length after eating an apple
+
+The game ends if the snake collides with walls or itself
 
 Features
-1. AI-controlled snake
+AI-Controlled Snake
 
-Greedy AI: the snake always chooses the direction that moves it closer to the apple
+Greedy path selection: the AI chooses the direction that reduces distance to the apple
 
-Safety check: before moving, the AI ensures it does not hit the wall or its own body
+Collision avoidance: AI avoids walls and its own body
 
-Fallback logic: if the preferred direction is blocked, the AI selects an alternative safe direction
+Fallback logic: if the preferred direction is blocked, AI selects an alternative safe path
 
-Helps the snake survive longer and eat more apples compared to manual play
+Demonstrates how simple AI can outperform human reflexes in predictable scenarios
 
-2. Gameplay
+Manual Play
 
-Manual control using arrow keys
+Control the snake using arrow keys
 
 Press Space to restart after game over
 
-Score is displayed continuously on the screen
+Real-time score display
 
-Requirements
+Installation
 
-Python 3.x
+Ensure you have Python 3.x installed. Then install Pygame:
 
-Pygame (pip install pygame)
+pip install pygame
 
-How to run
+
+Clone the repository:
+
 git clone <repo-url>
 cd snake-ai-demo
+
+How to Run
 python snake_ai.py
 
-AI Demo
 
-The AI calculates the movement direction every frame
+The AI will automatically control the snake if enabled
 
-The AI minimizes the risk of crashing into walls or its own body
+You can also play manually using arrow keys
 
-Can demonstrate that AI plays more consistently than humans over multiple games
+AI Overview
+
+The AI uses rule-based logic (no machine learning)
+
+At each frame:
+
+Calculates the optimal direction toward the apple
+
+Checks if the next move is safe (within grid, not hitting itself)
+
+Chooses a fallback direction if the preferred path is blocked
+
+Results in a more stable gameplay and higher average score compared to random or human play
 
 Notes
 
-The current AI is rule-based and does not use machine learning
+Current AI is basic but effective for demonstration purposes
 
-For a more advanced version, you can implement Q-learning or BFS/A* pathfinding so the snake learns how to survive and eat as many apples as possible
+For advanced AI, consider implementing pathfinding algorithms (BFS/A*) or reinforcement learning (Q-learning)
+
+Designed as a demo project for learning AI logic in games
