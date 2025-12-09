@@ -29,26 +29,26 @@ This project demonstrates how a simple AI agent ⚡ can automatically control th
 
 ## Installation 🛠️
 
-1. Ensure **Python 3.x** is installed  
+### 1. Ensure **Python 3.x** is installed  
    Check Python version:
 
    ```bash
    python --version
    ```
 
-2. Create and activate a virtual environment (optional but recommended)
+### 2. Create and activate a virtual environment (optional but recommended)
 ```
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 ```
 
-3. Install Pygame
+### 3. Install Pygame
 ```
 pip install pygame
 ```
 
-4. Clone the repository
+### 4. Clone the repository
 ```
 git clone <repo-url>
 cd snake-ai-demo
