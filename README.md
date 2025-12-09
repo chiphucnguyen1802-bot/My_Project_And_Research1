@@ -30,7 +30,67 @@ This project demonstrates how a simple AI agent ⚡ can automatically control th
 ## Installation 🛠️
 
 1. Ensure **Python 3.x** is installed  
-2. Install Pygame:
+   Check Python version:
 
-```bash
+   ```bash
+   python --version
+   ```
+
+2. Create and activate a virtual environment (optional but recommended)
+```
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+```
+
+3. Install Pygame
+```
 pip install pygame
+```
+
+4. Clone the repository
+```
+git clone <repo-url>
+cd snake-ai-demo
+```
+
+## How to Run ▶️
+```
+python snake_ai.py
+```
+- The AI ⚡ will automatically control the snake 🐍
+
+- You can also play manually using the arrow keys 🎮
+
+## How the AI Works ⚡
+
+The AI is rule-based, not machine learning 🤖. Each frame, it performs the following steps:
+
+1. Calculate optimal direction toward the apple 🍎
+
+2. Check safety: ensure the next move does not hit walls 🧱 or the snake 🐍
+
+3. Fallback: choose an alternative safe direction if the preferred path is blocked
+
+=> This results in more stable gameplay and higher average scores ⭐
+
+Advanced options for development:
+
+- Implement pathfinding algorithms (BFS / A*)
+
+- Apply reinforcement learning (Q-learning) to maximize survival and apples eaten 🍎
+
+## Notes 📝
+
+- Current AI ⚡ is basic but effective for demonstration purposes
+
+- Designed as a demo to showcase AI logic in games
+
+## License 📜
+
+This project is licensed under the MIT License:
+
+- Free to use, modify, and distribute
+
+- No warranty; authors are not responsible for any damages
+
